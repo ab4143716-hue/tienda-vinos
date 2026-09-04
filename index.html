@@ -26,11 +26,49 @@
       font-weight:bold;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
+    /* Estilos Corporación Balabarca */
+    .balabarca-info {
+      margin-top:20px;
+      padding:15px;
+      background: linear-gradient(to right, #fff8f0, #ffffff);
+      border-left:6px solid #800000;
+      border-radius:8px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .balabarca-info h2 {
+      color:#800000;
+      font-size:1.8em;
+      margin-bottom:10px;
+      font-weight:bold;
+    }
+    .balabarca-info p {
+      font-size:1.2em;
+      font-weight:bold;
+      color:#333;
+      line-height:1.5;
+    }
+    .balabarca-info h3 {
+      color:#a52a2a;
+      margin-top:15px;
+      font-size:1.4em;
+      font-weight:bold;
+    }
+    .balabarca-info ul {
+      font-size:1.1em;
+      font-weight:bold;
+      color:#444;
+      line-height:1.6;
+      list-style-type: "✔ ";
+    }
+    @keyframes fadeIn {
+      from { opacity:0; transform:translateY(20px); }
+      to { opacity:1; transform:translateY(0); }
+    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Logo que subiste -->
+    <!-- Logo -->
     <img src="logo.png" alt="Logística La Barca Perú">
     <div>
       <h1>VINOS DON ALEJO</h1>
@@ -49,6 +87,27 @@
   <section id="inicio">
     <h2>Bienvenido a Vinos Don Alejo</h2>
     <p>Explora nuestros vinos y accesorios exclusivos.</p>
+
+    <!-- Bloque Corporación Balabarca -->
+    <div class="balabarca-info">
+      <h2>Corporación Balabarca S.A.C.</h2>
+      <p>
+        Es una empresa especializada en la importación y venta de accesorios y afines para la industria vitivinícola y otros productos más.
+      </p>
+      <h3>Productos</h3>
+      <ul>
+        <li>Corchos</li>
+        <li>Cápsulas</li>
+        <li>Tapas Pilfer</li>
+        <li>Botellas</li>
+        <li>Bolsas termoencogibles</li>
+        <li>Dosificadores</li>
+        <li>Vasos</li>
+        <li>Jarras</li>
+        <li>Sacacorchos de plástico</li>
+        <li>Máquinas envasadoras</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Sección Productos -->
@@ -93,6 +152,4 @@
   </script>
 </body>
 </html>
-
-
 
