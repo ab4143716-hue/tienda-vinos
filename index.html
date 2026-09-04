@@ -39,12 +39,12 @@
     }
     .balabarca-info h2 {
       color:#800000;
-      font-size:1.6em;
+      font-size:1.8em;
       margin-bottom:10px;
       font-weight:bold;
     }
     .balabarca-info p {
-      font-size:1.1em;
+      font-size:1.2em;
       font-weight:bold;
       color:#333;
       line-height:1.5;
@@ -52,11 +52,11 @@
     .balabarca-info h3 {
       color:#a52a2a;
       margin-top:15px;
-      font-size:1.3em;
+      font-size:1.4em;
       font-weight:bold;
     }
     .balabarca-info ul {
-      font-size:1em;
+      font-size:1.1em;
       font-weight:bold;
       color:#444;
       line-height:1.6;
@@ -137,6 +137,21 @@
   <section id="ofertas" style="display:none;">
     <h2>Ofertas especiales</h2>
     <p>Pronto más promociones.</p>
+
+    <!-- Video añadido -->
+    <div style="margin-top:20px; text-align:center;">
+      <h3 style="color:#800000;">🎥 Mira nuestro video promocional</h3>
+      <video width="100%" controls style="max-width:600px; border:3px solid #800000; border-radius:10px;">
+        <source src="oferta.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+
+      <!-- Texto de precios llamativos -->
+      <div style="margin-top:20px; font-size:1.6em; font-weight:bold;">
+        <span style="color:#888; text-decoration:line-through;">Antes: S/ 6900</span><br>
+        <span style="color:#d32f2f; font-size:1.8em; animation: pulse 1.5s infinite;">🔥 Ahora: S/ 5000 por promoción 🔥</span>
+      </div>
+    </div>
   </section>
 
   <!-- Sección Contacto -->
@@ -163,7 +178,17 @@
       document.getElementById(id).style.display = "block";
     }
   </script>
+
+  <style>
+    /* Animación para el precio promocional */
+    @keyframes pulse {
+      0% { transform: scale(1); color:#d32f2f; }
+      50% { transform: scale(1.1); color:#ff0000; }
+      100% { transform: scale(1); color:#d32f2f; }
+    }
+  </style>
 </body>
 </html>
+
 
 
