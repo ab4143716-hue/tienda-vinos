@@ -68,6 +68,13 @@
       to { opacity:1; transform:translateY(0); }
     }
 
+    /* Animación para el precio promocional */
+    @keyframes pulse {
+      0% { transform: scale(1); color:#d32f2f; }
+      50% { transform: scale(1.1); color:#ff0000; }
+      100% { transform: scale(1); color:#d32f2f; }
+    }
+
     /* 📱 Ajustes para pantallas pequeñas */
     @media (max-width: 768px) {
       header { flex-direction:column; text-align:center; }
@@ -142,7 +149,7 @@
     <div style="margin-top:20px; text-align:center;">
       <h3 style="color:#800000;">🎥 Mira nuestro video promocional</h3>
       <video width="100%" controls style="max-width:600px; border:3px solid #800000; border-radius:10px;">
-        <source src="oferta.mp4" type="video/mp4">
+        <source src="https://ab4143716-hue.github.io/tienda-vinos/oferta.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video.
       </video>
 
@@ -178,17 +185,8 @@
       document.getElementById(id).style.display = "block";
     }
   </script>
-
-  <style>
-    /* Animación para el precio promocional */
-    @keyframes pulse {
-      0% { transform: scale(1); color:#d32f2f; }
-      50% { transform: scale(1.1); color:#ff0000; }
-      100% { transform: scale(1); color:#d32f2f; }
-    }
-  </style>
 </body>
 </html>
-
+``
 
 
