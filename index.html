@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>VINOS DON ALEJO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- clave para móviles -->
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background-color: #800000; color: white; padding: 15px; display:flex; align-items:center; }
-    header img { width:5cm; height:5cm; margin-right:15px; }
-    header h1 { margin:0; }
+    header { background-color: #800000; color: white; padding: 15px; display:flex; align-items:center; flex-wrap:wrap; }
+    header img { width:5cm; height:5cm; margin-right:15px; max-width:100%; height:auto; }
+    header h1 { margin:0; font-size:2em; }
     nav { background-color: #a52a2a; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; cursor:pointer; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; cursor:pointer; display:inline-block; }
     section { padding: 20px; }
-    footer { background-color: #800000; color: white; text-align: center; padding: 10px; }
+    footer { background-color: #800000; color: white; text-align: center; padding: 10px; font-size:0.9em; }
     .producto { border: 1px solid #ccc; padding: 15px; margin: 20px auto; max-width: 400px; text-align: center; }
-    .producto img { max-width: 100%; }
+    .producto img { max-width: 100%; height:auto; }
     .whatsapp-fixed {
       position: fixed;
       bottom: 20px;
@@ -25,6 +26,7 @@
       border-radius:50px;
       font-weight:bold;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      font-size:1em;
     }
     /* Estilos Corporación Balabarca */
     .balabarca-info {
@@ -37,12 +39,12 @@
     }
     .balabarca-info h2 {
       color:#800000;
-      font-size:1.8em;
+      font-size:1.6em;
       margin-bottom:10px;
       font-weight:bold;
     }
     .balabarca-info p {
-      font-size:1.2em;
+      font-size:1.1em;
       font-weight:bold;
       color:#333;
       line-height:1.5;
@@ -50,19 +52,30 @@
     .balabarca-info h3 {
       color:#a52a2a;
       margin-top:15px;
-      font-size:1.4em;
+      font-size:1.3em;
       font-weight:bold;
     }
     .balabarca-info ul {
-      font-size:1.1em;
+      font-size:1em;
       font-weight:bold;
       color:#444;
       line-height:1.6;
       list-style-type: "✔ ";
+      padding-left:15px;
     }
     @keyframes fadeIn {
       from { opacity:0; transform:translateY(20px); }
       to { opacity:1; transform:translateY(0); }
+    }
+
+    /* 📱 Ajustes para pantallas pequeñas */
+    @media (max-width: 768px) {
+      header { flex-direction:column; text-align:center; }
+      header img { margin:0 auto 10px auto; width:80%; height:auto; }
+      nav a { display:block; margin:8px 0; }
+      .balabarca-info h2 { font-size:1.4em; }
+      .balabarca-info p, .balabarca-info ul { font-size:1em; }
+      .whatsapp-fixed { font-size:0.9em; padding:10px 14px; }
     }
   </style>
 </head>
