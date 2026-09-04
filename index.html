@@ -5,7 +5,9 @@
   <title>VINOS DON ALEJO</title>
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background-color: #800000; color: white; padding: 15px; text-align: center; }
+    header { background-color: #800000; color: white; padding: 15px; display:flex; align-items:center; }
+    header img { width:5cm; height:5cm; margin-right:15px; }
+    header h1 { margin:0; }
     nav { background-color: #a52a2a; padding: 10px; text-align: center; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; cursor:pointer; }
     section { padding: 20px; }
@@ -28,8 +30,12 @@
 </head>
 <body>
   <header>
-    <h1>VINOS DON ALEJO</h1>
-    <p>Catálogo de vinos y accesorios</p>
+    <!-- Aquí insertas tu logo -->
+    <img src="logo.png" alt="Logística La Barca Perú">
+    <div>
+      <h1>VINOS DON ALEJO</h1>
+      <p>Catálogo de vinos y accesorios</p>
+    </div>
   </header>
 
   <nav>
@@ -45,7 +51,7 @@
     <p>Explora nuestros vinos y accesorios exclusivos.</p>
   </section>
 
-  <!-- Sección Productos (oculta al inicio) -->
+  <!-- Sección Productos -->
   <section id="productos" style="display:none;">
     <div class="producto">
       <img src="vino-borgoña.jpg" alt="Vino Borgoña Cavas">
@@ -55,13 +61,13 @@
     </div>
   </section>
 
-  <!-- Sección Ofertas (oculta al inicio) -->
+  <!-- Sección Ofertas -->
   <section id="ofertas" style="display:none;">
     <h2>Ofertas especiales</h2>
     <p>Pronto más promociones.</p>
   </section>
 
-  <!-- Sección Contacto (oculta al inicio) -->
+  <!-- Sección Contacto -->
   <section id="contacto" style="display:none;">
     <h2>Contáctanos</h2>
     <p>Tel: 945 146 335</p>
@@ -78,16 +84,15 @@
 
   <script>
     function mostrarSeccion(id) {
-      // Ocultar todas las secciones
       document.getElementById("inicio").style.display = "none";
       document.getElementById("productos").style.display = "none";
       document.getElementById("ofertas").style.display = "none";
       document.getElementById("contacto").style.display = "none";
-      // Mostrar la sección seleccionada
       document.getElementById(id).style.display = "block";
     }
   </script>
 </body>
 </html>
+
 
 
