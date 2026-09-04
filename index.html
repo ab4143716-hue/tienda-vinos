@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>VINOS DON ALEJO</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- clave para móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; }
     header { background-color: #800000; color: white; padding: 15px; display:flex; align-items:center; flex-wrap:wrap; }
@@ -28,7 +28,6 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
       font-size:1em;
     }
-    /* Estilos Corporación Balabarca */
     .balabarca-info {
       margin-top:20px;
       padding:15px;
@@ -37,45 +36,12 @@
       border-radius:8px;
       animation: fadeIn 2s ease-in-out;
     }
-    .balabarca-info h2 {
-      color:#800000;
-      font-size:1.8em;
-      margin-bottom:10px;
-      font-weight:bold;
-    }
-    .balabarca-info p {
-      font-size:1.2em;
-      font-weight:bold;
-      color:#333;
-      line-height:1.5;
-    }
-    .balabarca-info h3 {
-      color:#a52a2a;
-      margin-top:15px;
-      font-size:1.4em;
-      font-weight:bold;
-    }
-    .balabarca-info ul {
-      font-size:1.1em;
-      font-weight:bold;
-      color:#444;
-      line-height:1.6;
-      list-style-type: "✔ ";
-      padding-left:15px;
-    }
-    @keyframes fadeIn {
-      from { opacity:0; transform:translateY(20px); }
-      to { opacity:1; transform:translateY(0); }
-    }
-
-    /* Animación para el precio promocional */
-    @keyframes pulse {
-      0% { transform: scale(1); color:#d32f2f; }
-      50% { transform: scale(1.1); color:#ff0000; }
-      100% { transform: scale(1); color:#d32f2f; }
-    }
-
-    /* 📱 Ajustes para pantallas pequeñas */
+    .balabarca-info h2 { color:#800000; font-size:1.8em; margin-bottom:10px; font-weight:bold; }
+    .balabarca-info p { font-size:1.2em; font-weight:bold; color:#333; line-height:1.5; }
+    .balabarca-info h3 { color:#a52a2a; margin-top:15px; font-size:1.4em; font-weight:bold; }
+    .balabarca-info ul { font-size:1.1em; font-weight:bold; color:#444; line-height:1.6; list-style-type: "✔ "; padding-left:15px; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes pulse { 0% { transform: scale(1); color:#d32f2f; } 50% { transform: scale(1.1); color:#ff0000; } 100% { transform: scale(1); color:#d32f2f; } }
     @media (max-width: 768px) {
       header { flex-direction:column; text-align:center; }
       header img { margin:0 auto 10px auto; width:80%; height:auto; }
@@ -88,7 +54,6 @@
 </head>
 <body>
   <header>
-    <!-- Logo -->
     <img src="logo.png" alt="Logística La Barca Perú">
     <div>
       <h1>VINOS DON ALEJO</h1>
@@ -103,34 +68,21 @@
     <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
   </nav>
 
-  <!-- Sección Inicio -->
   <section id="inicio">
     <h2>Bienvenido a Vinos Don Alejo</h2>
     <p>Explora nuestros vinos y accesorios exclusivos.</p>
-
-    <!-- Bloque Corporación Balabarca -->
     <div class="balabarca-info">
       <h2>Corporación Balabarca S.A.C.</h2>
-      <p>
-        Es una empresa especializada en la importación y venta de accesorios y afines para la industria vitivinícola y otros productos más.
-      </p>
+      <p>Es una empresa especializada en la importación y venta de accesorios y afines para la industria vitivinícola y otros productos más.</p>
       <h3>Productos</h3>
       <ul>
-        <li>Corchos</li>
-        <li>Cápsulas</li>
-        <li>Tapas Pilfer</li>
-        <li>Botellas</li>
-        <li>Bolsas termoencogibles</li>
-        <li>Dosificadores</li>
-        <li>Vasos</li>
-        <li>Jarras</li>
-        <li>Sacacorchos de plástico</li>
-        <li>Máquinas envasadoras</li>
+        <li>Corchos</li><li>Cápsulas</li><li>Tapas Pilfer</li><li>Botellas</li>
+        <li>Bolsas termoencogibles</li><li>Dosificadores</li><li>Vasos</li>
+        <li>Jarras</li><li>Sacacorchos de plástico</li><li>Máquinas envasadoras</li>
       </ul>
     </div>
   </section>
 
-  <!-- Sección Productos -->
   <section id="productos" style="display:none;">
     <div class="producto">
       <img src="vino-borgoña.jpg" alt="Vino Borgoña Cavas">
@@ -144,16 +96,12 @@
   <section id="ofertas" style="display:none;">
     <h2>Ofertas especiales</h2>
     <p>Pronto más promociones.</p>
-
-    <!-- Video añadido -->
     <div style="margin-top:20px; text-align:center;">
       <h3 style="color:#800000;">🎥 Mira nuestro video promocional</h3>
       <video width="100%" controls style="max-width:600px; border:3px solid #800000; border-radius:10px;">
-        <source src="https://ab4143716-hue.github.io/tienda-vinos/oferta.mp4" type="video/mp4">
+        <source src="https://ab4143716-hue.github.io/tienda-vinos/oferta.mp4.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video.
       </video>
-
-      <!-- Texto de precios llamativos -->
       <div style="margin-top:20px; font-size:1.6em; font-weight:bold;">
         <span style="color:#888; text-decoration:line-through;">Antes: S/ 6900</span><br>
         <span style="color:#d32f2f; font-size:1.8em; animation: pulse 1.5s infinite;">🔥 Ahora: S/ 5000 por promoción 🔥</span>
@@ -161,7 +109,6 @@
     </div>
   </section>
 
-  <!-- Sección Contacto -->
   <section id="contacto" style="display:none;">
     <h2>Contáctanos</h2>
     <p>Tel: 945 146 335</p>
@@ -171,10 +118,7 @@
     © 2026 VINOS DON ALEJO | Síguenos en redes sociales
   </footer>
 
-  <!-- Botón fijo de WhatsApp -->
-  <a class="whatsapp-fixed" href="https://wa.me/51945146335?text=Hola,%20quiero%20hablar%20con%20un%20asesor%20de%20ventas" target="_blank">
-    📲 Asesor de Ventas
-  </a>
+  <a class="whatsapp-fixed" href="https://wa.me/51945146335?text=Hola,%20quiero%20hablar%20con%20un%20asesor%20de%20ventas" target="_blank">📲 Asesor de Ventas</a>
 
   <script>
     function mostrarSeccion(id) {
@@ -187,6 +131,7 @@
   </script>
 </body>
 </html>
+
 ``
 
 
