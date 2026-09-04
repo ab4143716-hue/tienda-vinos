@@ -12,69 +12,22 @@
     footer { background-color: #800000; color: white; text-align: center; padding: 10px; }
     .producto { border: 1px solid #ccc; padding: 15px; margin: 20px auto; max-width: 400px; text-align: center; }
     .producto img { max-width: 100%; }
-    .whatsapp { display:inline-block; background:#25D366; color:white; padding:10px 15px; text-decoration:none; border-radius:5px; font-weight:bold; }
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background:#25D366;
+      color:white;
+      padding:12px 18px;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>VINOS DON ALEJO</h1>
     <p>Catálogo de vinos y accesorios</p>
-  </header>
-
-  <nav>
-    <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
-    <a href="#" onclick="mostrarSeccion('productos')">Productos</a>
-    <a href="#" onclick="mostrarSeccion('ofertas')">Ofertas</a>
-    <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
-  </nav>
-
-  <!-- Sección Inicio -->
-  <section id="inicio">
-    <h2>Bienvenido a Vinos Don Alejo</h2>
-    <p>Explora nuestros vinos y accesorios exclusivos.</p>
-    <!-- Botón de WhatsApp para asesor de ventas -->
-    <a class="whatsapp" href="https://wa.me/51945146335?text=Hola,%20quiero%20hablar%20con%20un%20asesor%20de%20ventas" target="_blank">
-      📲 Comunícate con un asesor de ventas
-    </a>
-  </section>
-
-  <!-- Sección Productos (oculta al inicio) -->
-  <section id="productos" style="display:none;">
-    <div class="producto">
-      <img src="vino-borgoña.jpg" alt="Vino Borgoña Cavas">
-      <h3>VINO BORGOÑA CAVAS</h3>
-      <p>Precio x Caja (12 botellas): S/ 100.00<br>Precio x Pack: S/ 20.00</p>
-      <a class="whatsapp" href="https://wa.me/51945146335" target="_blank">📲 Comprar por WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Sección Ofertas (oculta al inicio) -->
-  <section id="ofertas" style="display:none;">
-    <h2>Ofertas especiales</h2>
-    <p>Pronto más promociones.</p>
-  </section>
-
-  <!-- Sección Contacto (oculta al inicio) -->
-  <section id="contacto" style="display:none;">
-    <h2>Contáctanos</h2>
-    <p>Tel: 945 146 335</p>
-  </section>
-
-  <footer>
-    © 2026 VINOS DON ALEJO | Síguenos en redes sociales
-  </footer>
-
-  <script>
-    function mostrarSeccion(id) {
-      // Ocultar todas las secciones
-      document.getElementById("inicio").style.display = "none";
-      document.getElementById("productos").style.display = "none";
-      document.getElementById("ofertas").style.display = "none";
-      document.getElementById("contacto").style.display = "none";
-      // Mostrar la sección seleccionada
-      document.getElementById(id).style.display = "block";
-    }
-  </script>
-</body>
-</html>
 
